@@ -1,0 +1,240 @@
+body{
+    background-color:coral;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@media screen and (max-width: 700px){
+    #number4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #number4 > .card{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            margin: 1rem 0;
+        }
+        .logo{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            outline: solid 1px gray;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: blue;
+                font-size: 2rem;
+            }
+        }
+        p{
+            margin: 0 0 1rem 0;
+        }
+        a{
+            text-decoration: none;
+            margin: 0 0 1rem 0;
+        }
+    }
+}
+@media screen and (min-width: 701px){
+    #number4{
+        display: flex;
+        flex-direction: row;
+    }
+    #number4 > .card{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 30%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            margin: 1rem 0;
+        }
+        .logo{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            outline: solid 1px gray;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: blue;
+                font-size: 2rem;
+            }
+        }
+        p{
+            margin: 0 0 1rem 0;
+        }
+        a{
+            text-decoration: none;
+            margin: 0 0 1rem 0;
+        }
+    }
+}
+
+@keyframes Move{
+    0%{
+        .box{
+            position: fixed;
+            left: 0;
+        }
+    }
+    50%{
+        .box{
+            position: fixed;
+            right: 0;
+        }
+    }
+    100%{
+        .box{
+            position: fixed;
+            left: 0;
+        }
+    }
+}
+*{
+    margin: 0;
+    font-family: "Raleway";
+}
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+.black-button{
+    background-color: #000;
+    border-radius: 2rem;
+    color: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-weight: 600;
+}
+.icons{
+    background-color: gainsboro;
+    padding: 0.5rem;
+    width: fit-content;
+    margin: 1rem;
+}
+.icons > button{
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+.fa-twitter{
+    color: rgb(64, 201, 255);
+}
+.fa-facebook{
+    color: rgb(0, 38, 255);
+}
+.fa-google-plus{
+    color: rgb(255, 0, 0);
+}
+.purple-button{
+    background-color: rgb(140, 0, 255);
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    margin: 1rem;
+}
+#number2-tag{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+#number2{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border: solid 1px rgb(94, 188, 243);
+}
+.info{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 3rem 0 0;
+    h2{
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+    }
+}
+.info > p{
+    margin: 0 0 1rem 0;
+}
+.address > p{
+    margin: 0 2rem 0 2rem;
+}
+.address i{
+    margin: 0 1rem 0 0;
+}
+form{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 0 5rem 0;
+}
+form > label{
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+form > input[type="text"], form > input[type="email"]{
+    width: 95%;
+    padding: 1rem;
+    display: block;
+    margin: 0 0 1rem 0;
+}
+textarea{
+    width: 100%;
+}
+form > input[type="submit"]{
+    border: none;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    padding: 1rem;
+}
+table{
+    border-spacing: 0;
+    border: 0;
+    margin: 0 0 2rem 0;
+}
+th{
+    background-color: #c223bc;
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: #ffffff;
+}
+tr:nth-child(even){
+    background-color: #f1f1fd;
+}
+.first td{
+    border: solid 1px #979696;
+    text-align: center;
+}
+.second td{
+    border: none
+}
+.third td{
+    border-bottom: solid 1px #979696;
+}
+.box{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: red;
+    animation: Move 5s ease-in none infinite normal;
+}
